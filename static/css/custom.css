@@ -1,0 +1,13 @@
+.nav-link {
+    text-decoration: underline;
+}
+
+.nav-link:focus, .nav-link:hover {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
