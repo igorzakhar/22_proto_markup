@@ -26,16 +26,16 @@ html {
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
 .nav-link {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .nav-link:focus, .nav-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+  color: #0056b3;
+  text-decoration: underline;
 }
 
 .nav-scroller {
@@ -43,7 +43,21 @@ a:hover {
 }
 
 .btn-group-lg>.btn, .btn-lg {
-    border-radius: 3rem;
+  border-radius: 3rem;
 }
 
+.btn-group-sm>.btn, .btn-sm {
+    border-radius: 1rem;
+}
 
+.navbar {
+  height: 60px;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.btn-secondary {
+  border-radius: .4rem;
+}
