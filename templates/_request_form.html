@@ -1,0 +1,66 @@
+    <div class="request-form-header px-3 py-3 pt-md-4 pb-md-4 mx-auto text-center">
+      <h1 class="display-5">Вам позвонят лучшие поставщики {{ current_region }}а</h1>
+    </div>
+
+
+    <div class="card-deck mb-3 text-center">
+      <div class="card bg-light mb-3 box-shadow">
+        <div class="card-header text-left">
+          <h4 class="my-0 font-weight-normal">Я ищу</h4>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-10 offset-md-2">
+              <div class="custom-control custom-checkbox text-left">
+                <input type="checkbox" class="custom-control-input" id="Check1">
+                <label class="custom-control-label" for="Check1">ЖБИ <span class="text-muted">(фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки)</span></label>
+              </div>
+              <div class="custom-control custom-checkbox text-left">
+                <input type="checkbox" class="custom-control-input" id="Check2">
+                <label class="custom-control-label" for="Check2">Кирпич / Газобетон / Брус</label>
+              </div>
+              <div class="custom-control custom-checkbox text-left">
+                <input type="checkbox" class="custom-control-input" id="Check3">
+                <label class="custom-control-label" for="Check3">Бетон / Раствор</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-10 offset-md-2 mb-2">
+              <div class="dropdown show text-left mt-2">
+                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  в {{ current_region }}е и области
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                {%- for item in regions %}
+                  <a class="dropdown-item" href="#">{{ item }} и область</a>
+                {%- endfor -%}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <label class="col-md-2">Описание *</label>
+            <div class="col-md-10 text-left">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+              <span class="text-muted small">Пример: нужен фбс 24.4.6 50 шт плиты пк 60-20-12 доставка в новолуговое</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <label class="col-md-2 mt-1">Телефон *</label>
+            <div class="col-md-4 text-left mt-1">
+              <input type="text" class="form-control" placeholder="Номер телефона">
+            </div>
+            <label class="col-md-2 mt-1">Имя *</label>
+            <div class="col-md-4 text-left mt-1">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+          </div>
+            <button type="button" class="btn btn-lg btn-outline-primary mt-4">Опубликовать заявку
+            </button>
+          </div>
+      </div>
+    </div>

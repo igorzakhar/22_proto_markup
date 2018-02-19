@@ -57,3 +57,17 @@ a:hover {
 .btn-secondary {
   border-radius: .4rem;
 }
+
+.fa-chevron-left, .fa-chevron-right {
+  color: black;
+  font-size: 30px;
+}
+
+.carousel-control-prev {
+    left: -65px;
+}
+
+.carousel-control-next {
+    right: -65px;
+}
+
