@@ -2,13 +2,20 @@
 
 {%- block nav -%}
   {% include '_nav.html' %}
+  <div class="bg-white mx-auto mt-4">
+    <a href="#">
+      <h3 class="ml-5">
+        <span class="fas fa-home fa-2x"></span>
+        Логотип
+      </h3>
+      </div>
+    </a>
+  </div>
 {%- endblock -%}
 
 {%- block content -%}
-  {% include '_header.html' %}
-  {% include '_request_form.html' %}
   {% include '_requests.html' %}
-  {% include '_testimonials.html' %}
+  {% include '_paginator.html' %}
 {%- endblock -%}
 
 {%- block footer -%}

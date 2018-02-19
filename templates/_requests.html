@@ -1,6 +1,6 @@
 <!--New Requests Section -->
-      <div class="pt-md-1 pb-md-4 mx-auto text-center">
-        <h1 class="display-5">Свежие заявки</h1>
+      <div class="pt-md-1 pb-md-4 mx-auto">
+        <h1 class="display-5" id="requests-header">{{ header }}</h1>
       </div>
 
       <div class="p-3 bg-white rounded box-shadow border">
@@ -49,8 +49,11 @@
         </div>
         {%- endfor -%}
         <div class="col text-center">
-          <button type="button" class="btn btn-sm btn-outline-primary mt-4 mb-2">
-            Посмотреть все заявки
-          </button>
+          <a class="btn btn-sm btn-outline-primary mt-4 mb-2" id="requests-button" href="#">
+            Показать ещё
+          </a>
+          <!-- <button type="button" class="btn btn-sm btn-outline-primary mt-4 mb-2" id="requests-button">
+            Показать ещё
+          </button> -->
         </div>
       </div>
