@@ -1,0 +1,3 @@
+Jinja2==2.10
+staticjinja==0.3.3
+
