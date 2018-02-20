@@ -7,11 +7,11 @@
         <div class="row mx-2 border-bottom border-gray pb-3 mb-0">
           <div class="dropdown show text-left mr-auto">
             <span class="text-muted small">раздел: </span>
-            <a class="dropdown-toggle small link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="dropdown-toggle small link" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Все
               </a>
 
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
               <a class="dropdown-item" href="#">Раздел 1</a>
               <a class="dropdown-item" href="#">Раздел 2</a>
             </div>
@@ -19,11 +19,11 @@
 
           <div class="dropdown show text-left ml-auto">
             <span class="text-muted small">регион: </span>
-            <a class="dropdown-toggle small link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="dropdown-toggle small link" href="#" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               {{ current_region }} и область
               </a>
 
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink3">
             {%- for item in regions %}
               <a class="dropdown-item" href="#">{{ item }} и область</a>
             {%- endfor -%}
@@ -40,7 +40,7 @@
           </div>
           <p class="pt-3 mb-2">
             {{ request_text }}
-          </p class="pt-1">
+          </p>
           <p class="mb-2">
             {{ request_name }}
           </p>
@@ -52,8 +52,5 @@
           <a class="btn btn-sm btn-outline-primary mt-4 mb-2" id="requests-button" href="#">
             Показать ещё
           </a>
-          <!-- <button type="button" class="btn btn-sm btn-outline-primary mt-4 mb-2" id="requests-button">
-            Показать ещё
-          </button> -->
         </div>
       </div>
